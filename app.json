@@ -1,0 +1,60 @@
+{
+
+  "name": "my-pyrogram-bot",
+
+  "description": "A Pyrogram and ChatGPT integration bot",
+
+  "repository": "https://github.com/yourusername/your-repo",
+
+  "keywords": ["pyrogram", "chatbot", "openai"],
+
+  "env": {
+
+    "BOT_TOKEN": {
+
+      "description": "The Telegram bot token for your bot",
+
+      "required": true
+
+    },
+
+    "OPENAI_API_KEY": {
+
+      "description": "The OpenAI API key for your bot",
+
+      "required": true
+
+    },
+
+    "API_ID": {
+
+      "description": "The API ID for your Telegram app",
+
+      "required": true
+
+    },
+
+    "API_HASH": {
+
+      "description": "The API hash for your Telegram app",
+
+      "required": true
+
+    }
+
+  },
+
+  "buildpacks": [
+
+    {
+
+      "url": "heroku/python"
+
+    }
+
+  ],
+
+  "stack": "heroku-20"
+
+}
+
